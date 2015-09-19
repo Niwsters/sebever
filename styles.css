@@ -1,8 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Times New Roman", Georgia;
-  background: #DDD;
+  font-family: Lato, sans-serif;
 }
 
 a {
@@ -10,13 +9,14 @@ a {
 }
 
 h1,h2 {
-  font-family: sans-serif;
   font-weight: normal;
+  text-align: center;
   margin: 0;
 }
 
 p {
   margin-top: 0;
+  color: #333;
 }
 
 .content {
@@ -24,20 +24,30 @@ p {
   margin: 0 auto;
   background: white;
   padding: 20px;
-  border: 1px solid #CCC;
   border-top: none;
+}
+
+.content h2 {
+  text-align: left;
+  margin: 30px 0 5px 0;
+  font-size: 24px;
+}
+
+.page-header {
+  margin: 10px 0 40px 0;
+  font-weight: bold;
 }
 
 header {
   text-align: center;
-  padding-bottom: 40px;
-  background: #333;
-  padding-top: 40px;
+  padding-bottom: 10px;
+  background: #FFF;
+  padding-top: 10px;
   color: white;
 }
 
 header, header h1, nav li, nav a {
-  font-family: "Century Gothic";
+  font-family: Lato;
 }
 
 header .tagline {
@@ -45,15 +55,15 @@ header .tagline {
 }
 
 nav {
-  background: #333;
+  background: #918A6F;
   text-align: center;
-  padding: 10px 0;
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  padding-top: 3px;
 }
 
 nav li {
@@ -65,9 +75,12 @@ nav li {
 nav a {
   color: white;
   text-decoration: none;
-  padding: 10px 20px;
-  padding-bottom: 10px;
-  background: #252525;
+  padding: 5px 20px;
+  background: #c0bdad;
+  display: inline-block;
+  border: 1px solid white;
+  border-bottom: none;
+  width: 90px;
 }
 
 nav .active a {
@@ -78,7 +91,6 @@ nav .active a {
 nav a:hover {
   background: white;
   color: black;
-  padding-bottom: 11px;
 }
 
 .footer {
@@ -93,11 +105,15 @@ span.highlight {
 }
 
 .blogpost {
-  background: #EEE;
   padding: 10px;
   margin-top: 10px;
 }
 
 .blogpost h1 {
-  font-size: 18px;
+  font-size: 26px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #CCC;
+  display: table;
+  margin: 0 auto 30px auto;
+  font-weight: bold;
 }
